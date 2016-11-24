@@ -62,7 +62,7 @@ select {border: 1px solid #eee;height: 42px;line-height: 42px;padding: 0 10px;co
         letter-spacing: 0.02em;
       }
       a:hover {
-        color: grey;
+        color: orange;
       }
       code, kbd, pre, samp {
         font-family: &quot;Raleway&quot;, sans-serif;
