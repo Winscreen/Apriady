@@ -1,0 +1,113 @@
+/* Winscreen.web.id */
+
+html {font-size: 10px;font-family: sans-serif;}
+* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;}
+:before,:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+a,input,textarea,button,select {outline: none;}
+h1,.h1,h2,.h2,h3,.h3 {margin-top: 1px;margin-bottom: 1px;}
+h4,.h4,h5,.h5,h6,.h6 {margin-top: 1px;margin-bottom: 1px;}
+a:hover,h1:focus,h2:focus,h3:focus,h4:focus,h5:focus,h6:focus {text-decoration: none;}
+a:focus,input:focus,textarea:focus,button:focus,select:focus {outline: none !important;text-decoration: none;}
+hr{margin-top: 20px;margin-bottom: 20px;border: 0;border-top: 1px solid #eee;height: 0;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+body {position: relative;font-family: sans-serif;font-size: 13px;color: red;background-color: #fff;background-repeat: no-repeat;padding: 0;margin: 0;letter-spacing: 0.014em;line-height: 1.42857;}
+input, textarea {-webkit-border-radius: 0;-moz-border-radius: 0;-ms-border-radius: 0;-o-border-radius: 0;border-radius: 0;}
+input[type=&quot;search&quot;],input[type=&quot;text&quot;],input[type=&quot;url&quot;],input[type=&quot;number&quot;],input[type=&quot;password&quot;],input[type=&quot;email&quot;],input[type=&quot;file&quot;] { background: none;border: 0;background-color: #f7f8f8;height: 42px;line-height: 42px;padding: 0 15px;color: #888888;font-family: &quot;Lato&quot;, sans-serif !important;font-size: 14px;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
+select {border: 1px solid o;height: 42px;line-height: 42px;padding: 0 10px;color: #888888;font-family: &quot;Lato&quot;, sans-serif;font-size: 14px;}
+      textarea {
+        background: none;
+        border: 0;
+        background-color: #f7f8f8;
+        resize: none;
+        padding: 15px;
+        height: 100px;
+        color: #888888;
+        font-family: &quot;Lato&quot;, sans-serif;
+        font-size: 14px;
+        vertical-align: middle;
+      }
+      input::-webkit-input-placeholder {
+        color: #888888;
+      }
+      input:-moz-placeholder {
+        color: #888888;
+      }
+      input::-moz-placeholder {
+        color: #888888;
+      }
+      input:-ms-input-placeholder {
+        color: #888888;
+      }
+      textarea::-webkit-input-placeholder {
+        color: #888888;
+      }
+      textarea:-moz-placeholder {
+        color: #888888;
+      }
+      textarea::-moz-placeholder {
+        color: #888888;
+      }
+      textarea:-ms-input-placeholder {
+        color: #888888;
+      }
+      a {
+        color: red;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        letter-spacing: 0.02em;
+      }
+      a:hover {
+        color: #747474;
+      }
+      code, kbd, pre, samp {
+        font-family: &quot;Raleway&quot;, sans-serif;
+        font-size: inherit;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        letter-spacing: 0.015em;
+      }
+      code {
+        background-color: #eee;
+        letter-spacing: 0.015em;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border: 0;
+      }
+      p {
+        line-height: 1.8em;
+        letter-spacing: 0.02em;
+      }
+      ol li, ul li {
+        letter-spacing: 0.02em;
+      }
+      ::-moz-selection {
+        color: #fff;
+        background-color: #e15d5d;
+      }
+      ::selection {
+        color: #fff;
+        background-color: #e15d5d;
+      }
+      #page-wrap {
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        z-index: 9;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+  background: #FFF url(&quot;https://cdn.rawgit.com/Winscreen/All-Image/master/Header%20Top.PNG;) repeat-x top center;
+      }
