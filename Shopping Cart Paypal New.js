@@ -68,7 +68,7 @@ function Cart(){
 	me.checkoutTo = PayPal;
 	me.email = "";
 	me.merchantId	 = "";
-	me.cartHeaders = ['Image','_image','Thumb','Thumb_image','Remove','Name','Price','Quantiy','Total'];
+	me.cartHeaders = ['thumb','Image','_image','Thumb','Thumb_image','Remove','Name','Price','Quantiy','Total'];
 	/* 
 		cart headers: 
 		you can set these to which ever order you would like, and the cart will display the appropriate headers
