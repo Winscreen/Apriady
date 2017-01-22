@@ -1,0 +1,857 @@
+<style type='text/css'>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;}
+
+/*** HTML5 Display Role Reset For Older Browsers ***/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+{display: block;}
+
+body
+{line-height: 1; display: block; }
+
+html
+{display: block; }
+
+blockquote,q 
+{quotes: none; }
+
+blockquote:before,blockquote:after,q:before,q:after
+{content: &quot; &quot;;}
+
+table, td, th
+{border:1px solid #29BAF4; } <!-- Warna Bolder List Feedburner -->
+
+/*** Blogger Css Reset ***/
+.navbar,.status-msg-wrap,.post-feeds,.feed-links
+{display: none;}
+
+.section,.widget
+{margin: 0 0 0 0;
+padding: 0 0 0 0;}
+
+h1.post-title a
+    {background:transparent;
+    color:#CCFF00;
+    padding:10px 15px 10px 15px;
+    font-size:25px;
+    font-weight:400;
+    text-align:center;
+    display:inline-block;
+    margin-top:0;
+    margin:0;
+    font-family:&quot;Oswald&quot;,Verdana,Sans-Serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition:all 0.6s ease-in-out;}
+
+h1.post-title
+    {background:#2F3138;
+    color:#E8EAEF;
+    padding:10px 15px 10px 15px;
+    font-size:25px;
+    font-weight:400;
+    text-align:center;
+    display:block;
+    line-height:1.2em;
+    margin-top:0;
+    margin:0;
+    margin-bottom:20px;
+    font-family:&quot;Oswald&quot;,Verdana,Sans-Serif;
+    letter-spacing:1px;
+    border:1px solid #464A54;
+    transition:all 0.6s ease-in-out;}
+
+h1.post-title:hover
+    {color:#FFFFFF;
+    text-decoration:none;}
+
+h1.post-title a:hover
+    {background:transparent;
+    color:#FFFFFF;
+    text-decoration:none;}
+
+/*** FRAMEWORK ***/
+body,.body-fauxcolumn-outer
+    {background: #000000; <!-- Warna Background Luar Posting -->
+    font: normal normal 12px Arial,sans-serif,#0099FF; <!-- Tulisan Copyright -->
+    line-height: 1.625;}
+
+#clear,.clear
+    {clear: both;}
+
+#navbar-iframe,.post-feeds,.feed-links,.status-msg-wrap
+    {display: none;}
+
+.right
+    {float: right;}
+
+.left
+    {float: left;}
+
+img,iframe,table,video,object,embed
+    {max-width: 100%;}
+
+img:hover
+    {opacity: 0.8;
+    transition: all .2s ease-in;}
+
+strong,b
+    {font-weight: bold;}
+
+cite,em,i
+    {font-style: italic;}
+
+a:link
+    {color: #0099FF; text-decoration: none;} <!-- Judul Warna Posting Sebelum -->
+
+a:visited
+    {color: #CCFF00; text-decoration: none; transition: all .3s ease-in; }
+
+a:hover
+    {color: #CCFF33  ; text-decoration: none; transition: all .3s ease-in; } <!-- Judul Warna Posting Sesudah -->
+
+a img
+    {border: none; border-width: 0; outline: none; }
+
+abbr,acronym
+    {color: #CCFF00; border-bottom: 1px dotted; cursor: help; position: relative; }
+
+small
+    {font-size: 80%;}
+
+p,blockquote,pre,table,figure,hr,form,ol,ul,dl
+    {margin: 0 0 1.2em;}
+
+hr
+    {height: 1px; border: 1px; background-color: #0099FF; } <!-- Warna Border Ketebalan Categori-->
+
+<!-- Tipe Tulisan H1-H6 -->
+h1,h2,h3,h4,h5,h6
+    {font-family: sands-serif; font-weight: 400; line-height: 1.1; margin: 0 0 0.5em; }
+
+<!-- Ukuran Tulisan H1-H6 -->
+h1 {font-size: 160%;}
+h2 {font-size: 140%;}
+h3 {font-size: 120%;}
+h4 {font-size: 100%;}
+h5 {font-size: 80%;}
+h6 {font-size: 70%;}
+
+dl,ol,ul
+    {margin-left: 20px;}
+
+ol
+    {list-style: decimal outside;}
+
+ul
+    {list-style: square outside;}
+
+li
+    {margin: 5px 0;}
+
+ol ol,ul ul
+    {margin-left: 16px;}
+
+ol li
+    {padding: 0 0 5px;}
+
+dl
+    {overflow: hidden;}
+
+li p:first-child,dt p:first-child
+    {margin-top: 20px;}
+
+dt
+    {clear: left; float: left; width: 26%; text-align: right;}
+
+dd
+    {margin-left: 30%; margin-bottom: 20px;}
+
+kbd
+   {background-color: #2E3439;
+    color: #FFFFFF;
+    border-radius: 2px;
+    border-radius: 2px;
+    border-radius: 2px;
+    font-size: 85%;
+    padding: 2px 6px;}
+
+sup,sub
+    {font-size: 76%;
+    position: relative;
+    top: .45em;}
+
+sup
+    {top: -.45em;}
+
+mark,.highlight
+    {background-color: #29BAF4 ; color: #CCFF00;}
+
+mark.highlight
+    {border: 1px solid #29BAF4;}
+
+form
+    {margin: 0; padding: 0;}
+
+/*** Pre Begin ***/
+pre
+    {background:#000000;
+    /*** background-image:
+    url(http://3.bp.blogspot.com/-2XnqF_IKdO0/VVXWEgk9wJI/AAAAAAAABtk/arwv6FrRx70/s200/Line%2BMenu.PNG); ***/
+    color:#0099FF;
+    display:block;
+    font:14px/19px Consolas,&#39;Andale Mono&#39;,Courier,&#39;Courier New&#39;,monospace;
+    margin:1px 0;
+    overflow:auto;
+    padding: none ; /*** Ori padding:19px 19px 15px; ***/
+    border:1px solid #0099FF; /*** Ori border:1px solid #000000;  ***/
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto;}
+
+pre .comment
+    {color: Blue ;}
+/*** Pre End ***/
+
+code
+    {font-family: Consolas,&#39;Andale Mono&#39;;
+    line-height: 16px;
+    color: #88A9AD ;
+    background-color: transparent;
+    padding: 1px 2px;
+    font-size: 12px;}
+
+code mark
+    {background-color: #000000!important;
+    color: #29BAF4!important;
+    padding: 2px;
+    border-radius: 2px;}
+
+pre code mark
+    {background-color: #000000!important;
+    color: #29BAF4!important;
+    padding: 2px;
+    border-radius: 2px;}
+
+
+/*** Warna Background Luar Dan Lebar Begin ***/
+#luarnya
+    {background: #000000;
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+	box-shadow: 0px 0px 8px 0px #29BAF4 ;}
+/*** Warna Background Luar Dan Lebar End ***/
+
+/*** Lebar Dan Gambar Line Atas Begin ***/
+#w-ctf
+    {background-image:
+    url(http://3.bp.blogspot.com/-2XnqF_IKdO0/VVXWEgk9wJI/AAAAAAAABtk/arwv6FrRx70/s200/Line%2BMenu.PNG);
+    background-repeat: repeat-x;
+    width:970px;
+    margin: 0px;
+    padding: 5px;}
+/*** Lebar Dan Gambar Line Atas End ***/
+
+/*** Position Posting Kiri Atau Kanan Dan Lebar Begin ***/
+#mnceo-tr
+    {float: left;
+    width: 650px;
+    margin: 0;
+    padding: 0;}
+/*** Position Posting Kiri Atau Kanan Dan Lebar Begin ***/
+
+/*** Header Winscreen Warna Dan Ketinggian Judul Begin ***/
+#topTas
+    {text-align: Center;
+    color:red;
+    padding: -50px -50px -20px -20px ;
+    margin: 20px 10px 10px 10px ;
+    overflow: Hidden;}
+/*** Header Winscreen Warna Dan Ketinggian Judul Begin ***/
+
+/*** Atur Tata Letak Nama Header Winscreen Begin ***/
+#topTas1
+    {float: left;
+    width: 1750px;
+    margin: auto 0;
+    padding: 0;}
+/*** Atur Tata Letak Nama Header Winscreen End ***/
+
+/*** Ukuran Dan Tipe Tulisan Header Winscreen Begin ***/
+#header-inner h1,#header-inner img,#topTas1 h1 {
+    font-family:Algerian, Algerian;
+	font-size: 35px;
+	margin: 0;
+    padding: 0;}
+/*** Ukuran Dan Tipe Tulisan Header Winscreen End ***/
+
+#topTas2
+    {float: right;
+    width: 728px;
+    margin: auto 0;
+    padding: 0;}
+
+/*** Warna Dan Ketinggian Navigasi Atas Begin ***/
+#menu
+    {background: #0099FF ;
+    color: #000000;
+    height: 35px;}
+
+#menu ul,#menu li
+    {margin: 0;
+    padding: 0;
+    list-style: none;}
+
+#menu ul
+    {height: 35px;}
+
+#menu li
+    {float: left;
+    display: inline;
+    position: relative;
+    font: bold 13px Arial;}
+
+#menu li a
+    {color: black;}
+
+
+#menu a
+    {display: block;
+    line-height: 35px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #CCFF00 ;}
+
+#menu li:hover &gt; a,#menu li a:hover
+    {color: #29BAF4 ;}
+
+#menu input
+    {display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 35px;
+    opacity: 0; 
+    cursor: pointer;}
+
+#menu label
+    {font: bold 30px Arial;
+    display: none;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;}
+
+#menu label span
+    {font-size: 13px;
+    position: absolute;
+    left: 35px;}
+
+#menu ul.menus
+    {height: auto;
+    overflow: hidden;
+    width: 180px;
+    background: #CCFF00;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border: 1px solid #0099FF ;
+    border-top: none;
+    color: #333333;}
+
+#menu ul.menus a
+    {color: #333333;}
+
+#menu ul.menus li
+    {display: block;
+    width: 100%;
+    font: 12px Arial;
+    text-transform: none;}
+
+#menu li:hover ul.menus
+    {display: block;}
+
+#menu a.prett,#menu a.trigger2
+    {padding: 0 27px 0 14px;}
+
+#menu li:hover &gt; a.prett,#menu a.prett:hover
+    {background: black;
+    color: #333333;}
+
+#menu a.prett::after
+    {content: &quot; &quot;;
+	width: 0;
+    height: 0;
+    border-width: 6px 5px;
+    border-style: solid;
+    border-color: #CCFF00 transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    right: 9px;}
+
+#menu ul.menus a:hover
+   {background: #BABABA;}
+
+#menu a.trigger2::after
+    {content: &quot; &quot;;
+	width: 0;
+    height: 0;
+    border-width: 5px 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #CCFF00;
+    position: absolute;
+    top: 13px;
+    right: 9px;}
+/*** Warna Dan Ketinggian Navigasi Atas End ***/
+
+/*** Tombol Pencarian Begin ***/
+#abt-search-btn
+    {background: none repeat scroll 0 0 #359BED;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor:pointer;
+    transition: all 0.3s;
+    transition: all 0.3s;
+    transition: all 0.3s;}
+
+#abt-search-btn:hover { 
+    color: #FFFFFF; 
+    background: #80CCEE; 
+    transition: all 0.3s; 
+    transition: all 0.3s; 
+    transition: all 0.3s;}
+
+#abt-search-box
+   {background: none repeat scroll 0 0 #FFFFFF; 
+    border: 0 none; 
+    padding: 5px;}
+/*** Tombol Pencarian End ***/
+
+/*** Warna Dan Ketinggian Navigasi Bawah Begin ***/
+.toggleMenu
+    {display: none;
+    background: #0CA3DF ;
+    padding: 0 15px;
+    height: 48px;
+    line-height: 48px;
+    color: #000000  !important;}
+
+#navitions
+    {font: normal bold 11px Arial, sans-serif;
+    background: #333333 ;
+    text-transform: uppercase;
+    height: 48px;
+    line-height: 48px;}
+
+.nav-menu2
+    {background: #333333 ;
+    list-style: none;
+    margin: 0 0 0 0;
+    float: left;}
+
+.nav-menu2:before,.nav-menu2:after
+    {content: &quot; &quot;;
+	display: table;}
+
+.nav-menu2:after
+    {clear: both;}
+
+.nav-menu2 ul
+    {list-style: none;
+    margin: 0 0 0 0;
+    width: 12em;}
+
+.nav-menu2 a
+    {display: block;
+    padding: 0 15px; }
+
+.nav-menu2 li
+    {position: relative;
+    margin: 0 0;}
+
+.nav-menu2 &gt; li
+    {float: left;}
+
+.nav-menu2 &gt; li &gt; a
+    {display: block;
+    height: 48px;
+    line-height: 48px;
+    color: #0099FF;
+    box-shadow: 0 4px 0 #333333 inset;}
+
+.nav-menu2 &gt; li &gt; a.active
+    {background: #222222;
+    box-shadow: 0 4px 0 #0099FF inset;}
+
+.nav-menu2 &gt; li:hover &gt; a
+    {background: #222222;
+    box-shadow: 0 4px 0 #CCFF00 inset;}
+
+.nav-menu2 li ul
+    {background: #999999;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    border: 1px solid #CCFF00;
+    border: 1px solid #0099FF ;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);}
+
+.nav-menu2 li li ul
+    {left: 100%;
+    top: -1px;}
+
+.nav-menu2 &gt; li.hover &gt; ul
+    {visibility: visible;
+    opacity: 10;}
+
+.nav-menu2 &gt; li &gt; ul:before
+    {content: &quot; &quot;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #CCFF00 transparent;
+    display: block;}
+
+.nav-menu2 li li.hover ul
+    {visibility: visible;
+    opacity: 10;}
+
+.nav-menu2 li li a
+    {display: block;
+    color: #333333;
+    position: relative;
+    z-index: 100;
+    line-height: 32px;}
+
+.nav-menu2 li li a:hover
+    {background: #F0F0F0;}
+
+.nav-menu2 li li li a {
+    background: #FFFFFF;
+    z-index: 20;
+    color: #333333;
+}
+
+.nav-menu2 li .parent:after
+    {content: &quot;\f107&quot;
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    padding-left: 6px;}
+/*** Warna Dan Ketinggian Navigasi Bawah Begin ***/
+
+/*** Breadcrumbs Begin ***/ /*** Contoh -- Home&gt;&gt;Winscreen&gt;&gt;Dummy -- ***/
+.breadcrumbs
+{background: #000000;color: #0099FF ;margin: 0 ;padding: 5px 20px;
+border: 2px solid #0099FF;box-shadow: 1px 1px 10px 1px #0099FF;}
+/*** box-shadow: 0px 0px 8px 0px rgba(163,163,163,1);} ***/
+.breadcrumbs a {color: #CCFF00;}
+.breadcrumbs a:hover {color: #0072C6;}
+.share {display: block;padding: 0;margin: 0 0 10px;}
+.post-footer {color: #999999;font-style: normal;letter-spacing: 0;margin: .3em 0;padding: 2px;text-transform: none;}
+.post h2 {line-height: 1.2em;margin: 0;padding: 0;text-decoration: none;text-align: left;}
+.post h2 a,.post h2 a:visited,.post h2 strong {display: block;text-decoration: none;color: #EE3322;}
+.post h2 strong,.post h2 a:hover {color: #0072C6;}
+.post {text-align: justify;background: #FFFFFF;font-size: 12px;margin: 0;padding: 0;position: relative;}
+.post img {padding: 0;margin: 0;page-break-after: always;}
+.separator a {margin-left: 0px !important;margin-right: 0px !important;}
+.post img {max-width: 100%;height: auto;}
+.date-header {margin: 1.5em 0 .5em;display: none;}
+/*** Breadcrumbs End ***/
+
+/*** Sidebar Right Begin ***/
+#sdv-right {float: right;width: 300px;margin: 0;padding: 0;}
+.sidebar h2 {background:#FFFFFF!important;color:#828282;border:1px solid #DDDDDD;font-family:&#39;Oswald&#39;,sans-serif;font-size:14px;font-weight:normal;position:relative;margin:0;padding:7px 20px;text-transform:uppercase;text-align:left;}
+.sidebar h2:hover:after {transition:all .4s ease-in-out;width:100%;}
+.sidebar h2:after {content:&quot; &quot;;width:50px;height:2px;background:#07ACEC;
+position:absolute;left:0;bottom:0;transition: .3s ease-in-out;}
+.sidebar h3 {background:#000000!important;color:#828282;border:1px solid #ddd;font-family:&#39;Oswald&#39;,sans-serif;font-size:18px;font-weight:normal;position:relative;margin:0;padding:7px 20px;text-transform:uppercase;text-align:left;}
+.sidebar h3:hover:after {transition:all .4s ease-in-out;width:100%;}
+.sidebar h3:after {content:&quot; &quot;;width:50px;height:2px;background:#07ACEC;
+position:absolute;left:0;bottom:0;transition: .3s ease-in-out;}
+#ads-banner {width: 100%;margin: 0;padding: 0;}
+.ads-banner h2 {padding: 0 0 5px;margin: 0 0 5px;border-bottom: 3px solid #222;color: #000;text-transform: uppercase;}
+.sidebar,.ads-banner {color: #000;line-height: 1.2em;padding: 0;margin: 0;}
+.sidebar .widget-content,.ads-banner .widget-content {margin-bottom: 20px;padding: 0;overflow: hidden;}
+.sidebar ul,.ads-banner ul {list-style: none;margin: 0;padding: 0;}
+.sidebar li, .ads-banner li {margin: 0;padding-top: 10px;padding-right: 0;padding-bottom: 10px;border-bottom: 1px solid #ddd;padding-left: 0;line-height: 1.5em;}
+.sidebar a, .ads-banner a {color: #222;text-decoration: none;}
+.sidebar a:hover, .ads-banner a:hover {color: #ccc;text-decoration: none;}
+/*** Sidebar Right End ***/
+
+/*** Footer Bawah Begin ***/
+#footer-wrap {background: #242424
+url(http://3.bp.blogspot.com/-2XnqF_IKdO0/VVXWEgk9wJI/AAAAAAAABtk/arwv6FrRx70/s200/Line%2BMenu.PNG)
+repeat-x top center;overflow: hidden;margin: 0 auto;
+padding: 15px 20px 0;color: #DDDDDD; width:940px;}
+#footer-wrap .left {float: left;width: 33%;}
+#footer-wrap .center {float: left;width: 33%;}
+#footer-wrap .right {float: right;width: 33%;}
+#footer-wrap .left .widget,#footer-wrap .center .widget {margin: 0 20px 20px 0;clear: both;}
+#footer-wrap .right .widget {margin: 0 0 20px 0;clear: both;}
+#footer-wrap h2 {margin: 0 0 10px 0;padding: 0;border-bottom: 2px solid #555;text-transform: uppercase;position: relative;color: #EEEEEE;}
+#footer-wrap ul,#footer-wrap ol {list-style: none;margin: 0 0 0 0;padding: 0 0 0 0;}
+#footer-wrap li {margin: 5px 0;padding: 0 0 0 0;}
+#footer-wrap a {color: #DDDDDD;}
+#footer-wrap a:hover {color: #F0F0F0;}
+#footer-wrapper{margin: 0 auto;background: #333333;}
+#footer {line-height: 1.6em;color: #0099FF;overflow: hidden;clear: both;margin:0;padding:15px;position: relative;}
+#footer a {color: #0099FF ;text-decoration: none;}
+#footer a:hover {color: yellow;text-decoration: none;}
+/*** Footer Bawah End ***/
+
+/*** Warna Lebar Tinggi Border Komentar Begin ***/
+#comments {background: #000000;border: 1px solid #0099FF ;margin: 20px  0 0;padding: 20px;box-shadow: 0px 0px 8px 0px rgba(163,163,163,1);}
+#comments h5 {color: #0099FF;margin: 0;padding: 0 0 5px;font-size: 120%;}
+.comment_inner {margin: 20px 0;padding: 0;overflow: hidden;}
+.comment_header {float: left;width: 67px;}
+.cm_head {position: relative;background: Black ;border-bottom: 1px solid #0099FF;margin: -10px -10px 0;padding: 5px 10px 8px;}
+.comment_avatar {border: 1px solid #0099FF;margin: 0;padding: 5px 5px 0;}
+.comment_avatar img {width: 55px;height: 55px;padding: 0;text-align: center;margin: 0;background: #fcfcfc url(http://1.bp.blogspot.com/-iO02cozlJuY/VVbCmm-BFOI/AAAAAAAABuM/A8xnqIt3Xxc/s1600/Anonymous.JPG) no-repeat;}
+div.comment_avatar img[src=&quot;http://img1.blogblog.com/img/openid16-rounded.gif&quot;] {content: url(http://1.bp.blogspot.com/-iO02cozlJuY/VVbCmm-BFOI/AAAAAAAABuM/A8xnqIt3Xxc/s1600/Anonymous.JPG);}
+.comment_name,.comment_name a {font-family: Calibri, Sans-Serif;padding: 0;margin: 0 0 5px 0;font-size: 18px;}
+.comment_service {margin-top: 0;}
+.comment_date {margin: 0;color: #0099FF;font-size: 10px;text-transform: uppercase;}
+.respond {float: right;margin: 0;padding: 0;}
+.comment_date:hover {color: #4EF4EE ;}
+.comment_body {background: Black ;border: 1px solid #0099FF;margin-left: 77px;padding: 10px;}
+.comment_body p {line-height: 1.4;margin: 15px 0 5px;color: #0099FF;font-size: 14px;word-wrap: break-word;padding: 0;}
+.comment_child .comment_wrap {padding-left: 78px;}
+.comment-delete {position: absolute;float: right;top: 10px;right: 10px;margin: 0;padding: 0;}
+.infonm {float: left;}
+.comment_reply {display: block;font-weight: 700;margin: 10px 0 0;padding: 7px 0;color: #CCFF00 !important;text-align: center;text-decoration: none!important;background: Black;}
+.comment_reply:hover {text-decoration: none;background: #2980b9;}
+.comment_hapus {font-weight: 700;margin: 0;padding: 0;color: #FFFFFF !important;text-decoration: none;}
+.comment_hapus:hover {text-decoration: none;color: #000000 !important;}
+.unneeded-paging-control {display: none;}
+.comment-form {max-width: 100%!important;}
+/*** Warna Lebar Tinggi Border Komentar End ***/
+
+/*** Warna Coment Dan Background Begin ***/
+#comment-editor
+{width: 100%!important;
+background: #FFFFFF no-repeat 50% 40%;
+margin-bottom: 0;
+margin-top: 5px;}
+
+.comment_form a {text-decoration: none;font-weight: bold;font-size: 12px; }
+.comment-form p {background: #0099FF;padding: 10px;margin: 5px 0 5px 0;color: #000000 ;font-size: 12px;line-height: 20px;position: relative;}
+.comment_reply_form {padding: 0 0 0 70px;}
+.comment_reply_form .comment-form {width: 100%;}
+iframe {border: none;overflow: hidden;}
+.deleted-comment {background: #E74C3C;color: #FFFFFF;padding: 20px;margin: 5px 0;display: block;}
+.comment-form p {border: 1px solid #CCCCCC;color: #000000;margin-bottom: 20px;padding: 20px;}
+/*** Warna Coment Dan Background End ***/
+
+/*** Ukuran Luar Posting Begin **/
+@media screen and (max-width:980px)
+{body{padding:0}
+#luarnya {width: 100%;padding:0;}
+#mnceo-tr {float: none;width: 100%;margin: 0;padding: 0;}
+#sdv-right {float: none;width: auto;margin: 20px 0 0;}
+#topTas {margin: 0;padding: 20px;overflow: hidden;}
+#topTas1 {float: none;width: 100%;margin: 0 0 20px;padding: 0;text-align: center;}
+#topTas2 {float: none;width: 100%;margin: 10px 0 0;padding: 0;text-align: center;}
+#header-inner img {max-width: 100%;width: 100%;margin: 0 auto;padding: 0;text-align: center;}}
+
+@media screen and (max-width:800px){
+#luarnya {width: 100%;padding:0;}
+#menu {position: relative;}
+#menu ul {background: #838383;position: absolute;top: 100%;right: 0;left: 0;z-index: 3;height: auto;display: none;}
+#menu ul.menus {width: 100%;position: static;border: none;}
+#menu li {display: block;float: none;width: auto;text-align: left;}
+#menu li a {color: #FFFFFF;}
+#menu li a:hover {color: #333;}
+#menu li:hover {background: #BABABA;color: #333333;}
+#menu li:hover &gt; a.prett,#menu a.prett:hover {background: #BABABA;color: #333333;}
+#menu ul.menus a {background: #BABABA;}
+#menu ul.menus a:hover {background: #FFFFFF;}
+#menu input,#menu label {position: absolute;top: 0;left: 0;display: block;}
+#menu input {z-index: 4;}
+#menu input:checked + label {color: White;}
+#menu input:checked ~ ul {display: block;}}
+
+@media screen and (max-width:941px) {
+.nav {float: none;width: 100%;max-width: 100%;}
+.active {display: block;}
+.nav li ul:before {display: none;}
+.nav &gt; li {float: none;overflow: hidden;}
+.nav ul {display: block;width: 100%;float: none;}
+.nav-menu2 li ul {background: #EEEEEE;border: none;box-shadow: none;}
+.nav-menu2 li li ul {background: #F5F5F5;}
+.nav-menu2 li li a:hover {background: #DDDDDD;}
+.nav &gt; li.hover &gt; ul , .nav li li.hover ul {position: static;}}
+
+@media screen and (max-width: 768px) {
+#footer-wrapper{width:100%;}
+#footer-wrapper .left {float: none;width: 100%;}
+#footer-wrapper .center {float: none;width: 100%;}
+#footer-wrapper .right {float: none;width: 100%;}
+#footer-wrapper .left .widget,#footer-wrapper .center .widget {margin: 0 0 20px;clear: both;}
+  }
+
+@media screen and (max-width:384px) {
+#topTas {margin: 0;padding: 10px 10px 5px;overflow: hidden;}
+#w-ctf {margin: 0;padding: 10px;}
+.sidebar .widget-content,.ads-banner .widget-content {margin-bottom: 10px;}
+#comments {margin: 10px  0 0;padding: 10px;}.comment_avatar, .comment_avatar img {display: none;}
+.comment_header {float: none;width: 100%;}
+.respond {float: right;margin: 0;padding: 0;}
+.comment_body {background: #FFFFFF;border: 1px solid #CCCCCC;margin-left: 0;padding: 10px;}
+.comment_child .comment_wrap {padding-left: 0;}}
+/*** Ukuran Luar Posting End **/
+
+/*** Blockquote Begin***/
+blockquote {
+-moz-border-bottom-colors: #29BAF4;
+-moz-border-image: #29BAF4;
+-moz-border-left-colors: #29BAF4;
+-moz-border-right-colors: #186a81;
+-moz-border-top-colors: #29BAF4;
+background-color:#e2e2e2;background-image: -moz-linear-gradient(top,#f6f6f6 0,#e2e2e2 100%); background-image: -ms-linear-gradient(top,#f6f6f6 0,#e2e2e2 100%); background-image: -o-linear-gradient(top,#f6f6f6 0,#e2e2e2 100%); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f6f6f6),color-stop(100%,#e2e2e2)); background-image: -webkit-linear-gradient(top,#f6f6f6 0,#e2e2e2 100%); background-image: linear-gradient(to bottom,#f6f6f6 0,#e2e2e2 100%);
+border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow:0 0 4px #888;-moz-box-shadow:0 0 4px #888;-webkit-box-shadow:0 0 4px #888;
+font:arial 9px arial;color:#29BAF4;letter-spacing:.001em;
+line-height: 1.1em;
+border-color: #999 #999 #999 #333;
+border-style: solid;
+border-width: 1px 1px 1px 15px;
+margin: 2px 4px 2px 1px;
+padding: 5px 5px;}
+
+blockquote:hover{
+-moz-border-bottom-colors: none;
+-moz-border-image: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+background: -moz-linear-gradient(center top,#88e1fa 0,#186a81 100%);
+background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#88e1fa),color-stop(1,#186a81));
+background: -moz-linear-gradient(center top,#88e1fa 0,#186a81 100%);
+-pie-background: linear-gradient(270deg,#88e1fa,#186a81);
+border-color: #29BAF4 #29BAF4 #29BAF4 #29BAF4;
+font:arial 9px arial;color:#000000;letter-spacing:.001em;
+line-height: 1.1em;
+border-style: solid;
+border-width: 1px 1px 1px 15px;
+margin: 2px 4px 2px 1px;
+padding: 5px 5px;}
+/*** Blockquote End ***/
+
+/*** Share Button Facebook Twitter Google+ Pinterest My Feeds Begin ***/
+#button-share
+{display: block;
+padding:3px 5px;
+border: 1px solid #0099FF ;
+background-color: #000000;
+color: #000000;
+font: normal normal 11px/normal Tahoma,Verdana,Arial,Sans-Serif;}
+.sosial ul{position:relative;height:41px;margin:0;padding:0;list-style:none}
+.sosial li {position:relative;float:left;margin:0;padding:0;width:20%;height:1px}
+.sosial li a {display:block;height:40px;line-height:40px;font-weight:bold;
+color:#FFFFFF;text-align:center;border-top:1px inset rgba(0,0,0,.1)}
+.sosial li a span{display:block;font-family:FontAwesome;font-size:0px;line-height:0px;width:0px;height:0px;border-radius:100px;border-bottom:3px solid #FFFFFF;position:absolute;background:#666666;color:#FFFFFF;left:35%;top:135%;transition:all 111111111111113s ease 0s;opacity:0;visibility:hidden}
+.sosial li a:hover span{content:&quot;&quot;;position:absolute;top:-150%;left:35%;display:block}
+.sosial li:hover span{opacity:1;opacity:1;visibility:visible}
+.sosial li:nth-child(1) a,.sosial li:nth-child(1) a span{background: #4A5E99}
+.sosial li:nth-child(2) a,.sosial li:nth-child(2) a span{background: #00BFFF}
+.sosial li:nth-child(3) a,.sosial li:nth-child(3) a span{background: #d34836}
+.sosial li:nth-child(4) a,.sosial li:nth-child(4) a span{background: #C92228}
+.sosial li:nth-child(5) a,.sosial li:nth-child(5) a span{background: #F99C58}
+
+@media screen and (max-width:414px){
+  .sosial ul{height:0px}
+  .sosial li {float:right;width:0%;height:0px;transition: all .511111111111111s}
+  .sosial li a span{left:0%;top:0%}
+  .sosial li a:hover span{content:&quot;&quot;;position:absolute;top:0%;left:0%}
+  .sosial li:hover{width:0%}}
+/*** Share Button Facebook Twitter Google+ Pinterest My Feeds End ***/
+
+/*** Back To Top Begin ***/
+#backtotop {background-color: #CCFF00;margin: 0;padding: 8px;border-radius: 50px;position: fixed;bottom: 1%;right: 80px;cursor: pointer;display: none;}
+#backtotop:hover {background-color: #0099FF;}
+/*** Back To Top End ***/
+
+/*** Popular Post Begin ***/
+.PopularPosts ul,.PopularPosts li,.PopularPosts li img,.PopularPosts li a,.PopularPosts li a img{margin:0 0;padding:0 0;list-style:none;border:none;background:none;outline:none}
+.PopularPosts ul{margin:.5em 0;list-style:none;color:black;counter-reset:num}
+.PopularPosts ul li{background-color:#EEEEEE ;margin:0 0 0 0!important;padding:.5em 1.5em .5em .5em!important;counter-increment:num;position:relative}
+.PopularPosts ul li a{color:#FFFFFF!important}
+.PopularPosts ul li a:hover{color:#2C3E50!important}
+.PopularPosts ul li:before,.PopularPosts ul li .item-title a,.PopularPosts ul li a{font-weight:bold;color:inherit;text-decoration:none}
+.PopularPosts ul li:before{content:counter(num)!important;display:block;position:absolute;background-color:#333333;color:#FFFFFF!important;width:22px;height:22px;line-height:22px;text-align:center;bottom:0;right:0;padding-right:0!important}
+.PopularPosts ul li:nth-child(1){background-color:#C0392B}
+.PopularPosts ul li:nth-child(2){background-color:#E74C3C}
+.PopularPosts ul li:nth-child(3){background-color:#D35400}
+.PopularPosts ul li:nth-child(4){background-color:#E67E22}
+.PopularPosts ul li:nth-child(5){background-color:#F39C12}
+.PopularPosts ul li:nth-child(6){background-color:#F1c40F}
+.PopularPosts ul li:nth-child(7){background-color:#2980B9}
+.PopularPosts ul li:nth-child(8){background-color:#3498DB}
+.PopularPosts ul li:nth-child(9){background-color:#16A085}
+.PopularPosts ul li:nth-child(10){background-color:#1ABC9C}
+.PopularPosts .item-snippet{font-size:11px}
+/*** Popular Post End ***/
+
+/*** Cloud Label Begin ***/
+.label-size-1,.label-size-2,.label-size-3,.label-size-4,.label-size-5{font-size:100%;opacity:10}.cloud-label-widget-content{text-align:left}.label-size{background:#E73037;display:block;float:left;margin:0 3px 3px 0;color:#FFFFFF;font-size:11px;text-transform:uppercase}.label-size a,.label-size span{display:inline-block;color:#FFFFFF!important;padding:6px 8px;font-weight:700}.label-size:hover{background:#333333}.label-count{white-space:nowrap;padding-right:3px;margin-left:-3px;background:#333333;color:#FFFFFF!important}.label-size{line-height:1.2}
+
+/*** All None Begin ***/
+#ContactForm1{display: none;}
+.quickedit{display: none;}
+#BlogArchive1 li{
+background:url(http://1.bp.blogspot.com/-Sx_P_en4Ots/VTeQSjTvLoI/AAAAAAAABoc/XxUf9ET-SQs/s1600/Abstract%2BColorful%2BPaper%2BRoll.JPG) no-repeat 0 10px;
+	text-indent:0;
+	line-height:1.2em;
+	margin:0;
+	padding:3px 0 3px 12px}
+#comments p a{display:none!important}
+/*** All None End ***/
+
+/*** Link Hover Menu Begin ***/
+a.type1:link {text-decoration: none;}
+a.type1:visited {color:black;}
+a.type1:hover {background: #E06C1F; color: white;}
+a.dibuka:hover:after { content: &quot; (&quot; attr(href) &quot;) &quot;; }
+.resource{display: block;padding:5px 10px;border: 1px solid #B3C5E0;background-color: #E0ECFF;color: #666666;font: normal normal 11px/normal Tahoma,Verdana,Arial,Sans-Serif;}
+/*** Link Hover Menu End***/
+
+/*** CSS Follow By Email Begin ***/
+.FollowByEmail .follow-by-email-inner {position:relative;color:#666666;}
+.follow-by-email-inner {background:#FFFFFF;padding:10px;color:#666666;}
+.follow-by-email-inner:before {color:#666666;content: &quot; Daftar Di Sini Dengan Alamat Email Anda Untuk Menerima Update Dari Blog Ini Di Email Anda &quot;;font-family:&#39;Open Sans&#39;;font-size:12px;font-weight:normal;padding-bottom:1px;}
+.FollowByEmail .follow-by-email-inner .follow-by-email-address {background:#FFFFFF;color:#888888;border:1px solid #ECEEEE;font-size:12px;height:25px;padding-left:5px;width:100%;transition:all 0.6s ease-in-out;}
+.FollowByEmail .follow-by-email-inner .follow-by-email-address:focus {outline:none;border:1px solid #DEE1E2;color:#666666;}
+.FollowByEmail .follow-by-email-inner .follow-by-email-submit {background:#CCFF00;color:#000000;border:1px solid;cursor:pointer;font-size:12px;height:28px;margin:0 3px;width:55px;z-index:0;border-radius:0;transition:all 0.6s ease-in-out;}
+.FollowByEmail .follow-by-email-inner .follow-by-email-submit:hover {background:#0099FF;color:RED;border:1px solid #23292b;}
+.tablet1 {width:100%;}
+.tablet2 {width:64px;}
+/*** CSS Follow By Email End ***/
+
+/*** Kotak Begin ***/
+.kotak{display:block;background:#FFFFFF;float:left;margin:0 2px 2px 0;color:#000000!important;border:1px solid #CCCCCC;padding:5px}
+.kotak:hover{border:1px solid #000000;color:#000000!important}
+.kotak a:hover{color:#000000!important}
+</style>
